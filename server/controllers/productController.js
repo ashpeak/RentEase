@@ -102,7 +102,9 @@ const createProduct = async (req, res) => {
 
 const getAllProducts = async (req, res) => {
   try {
-    const products = await Product.find()
+    const products = await Product.find({
+      isAvailable: true,
+    })
       .populate('owner', 'name profileImage')
       .populate('category', 'name')
       .select('-__v');

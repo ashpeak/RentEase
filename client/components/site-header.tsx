@@ -154,7 +154,7 @@ export function SiteHeader() {
           </SheetContent>
         </Sheet>
         <Link href="/" className="mr-6 hidden md:flex items-center space-x-2">
-          <span className="hidden font-bold text-xl text-teal-600 sm:inline-block">RentEase</span>
+          <span className="hidden font-bold text-xl text-teal-600 sm:inline-block">GoRent</span>
         </Link>
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
